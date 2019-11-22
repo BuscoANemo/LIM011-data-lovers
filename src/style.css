@@ -1,0 +1,243 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: linear-gradient(180deg, #EEA3E2 0%, #6EA3CA 106.52%);
+}
+
+header {
+  height: 100px;
+  left: 0px;
+  top: 0px;
+  width:100%;
+  background: linear-gradient(180deg, #EEA3E2 0%, #6EA3CA 106.52%);
+  box-shadow:1px 1px 5px #000; /* Sombreado */
+  z-index: 2;
+  position: fixed;
+}
+
+.cajaLogo {
+  position: absolute;
+  height: 80px;
+  left: 70px;
+  top: 0px;
+  width:15%;
+}
+
+img {
+  position: relative;
+  left: 0px;
+  top: 5px;
+}
+
+#header1 {
+  position: relative;
+  margin: auto;
+  top: 30px;
+  left: 350px;
+  width: 700px;
+  font: 18px 'Quicksand';
+}
+
+ul, li {
+  list-style: none;
+}
+
+.nav li {
+  background-color:#3863AC;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.nav > li {
+  float: left;
+  border-radius: 5px;
+  margin-right:40px;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+}
+
+.nav li:hover{
+  color:#FFCC08;
+  background: #1D2748;
+}
+
+ #tipo, #debilidad, .ordenar {
+  border-radius: 5px;
+  color: white;
+  background-color:#3863AC;
+  width: 100px;
+  height: 45px;
+  font: 18px 'Quicksand';
+  text-align: center;
+  
+}
+/* Banner */
+.banner{
+  width: 100%;
+  padding-top: 230px; /* Espaciado después de banner*/
+  height: 300px;
+  background: url("img/fondo.png");
+  background-position-y: 100px;
+  background-repeat: no-repeat;
+  background-size: 100% 400px;
+  z-index: 1;
+}
+
+.banner_caja {
+  position: absolute;
+  width: 70%;
+  height: 300px;
+  left: 200px;
+  top: 145px;
+  text-align: center;
+  font: 30px 'Quicksand';
+  background: rgba(29, 39, 72, 0.8);
+  border-radius: 10px;
+  color: white;
+  z-index:1;
+}
+
+.banner_caja p{
+  margin: 10px;
+  padding:60px
+}
+
+.banner_cuadro_amarillo {
+  position: absolute;
+  width: 613px;
+  height: 45px;
+  left: 170px;
+  top: 280px;
+  background: #FFCC08;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  text-align: center;
+  font: 20px 'Quicksand';
+  color: #1D2748;
+}
+
+.banner_cuadro_amarillo p{
+  margin: -60px;
+  padding: 70px
+}
+
+/* Lista de pokémones */
+.pokemonConteiner{
+  width: 1000px;
+  align-items: center;
+  margin: 0 auto;
+  top: 100px;
+
+}
+
+.cajaPersonaje{
+  display: inline-block;
+  margin:40px 40px 40px 40px;
+  border-radius: 30px;
+  width: 240px;
+  height: 240px;
+  right: 50px;
+
+}
+
+.estiloImg {
+  top: 70px;
+  left:67px;
+  position: absolute;
+  width: 205px;
+  height: 205px;
+  margin: -50px;
+  border-radius: 30px;
+}
+
+.flip-conteiner {
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 30px;
+}
+
+.cajaPersonaje:hover .flip-conteiner {
+  transform: rotateY(180deg);
+}
+
+.cajaImg, .front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+ .cajaImg {
+   border-radius:30px;
+ }
+
+ .front{
+   background-color: #3863AC;
+   transform: rotateY(180deg);
+   border-radius: 30px;
+   width: 100%;
+   height: 100%;
+ }
+
+ .back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  font: 16px 'Quicksand';
+  color: white;
+  top:10px;
+  text-align: center;
+  line-height: 20px; 
+ }
+
+#myName {
+  color: #1D2748;
+  font: 25px 'Quicksand';
+  top: 290px;
+}
+
+#myNum {
+  color: white;
+  top: 248px;
+  font: 18px 'Quicksand';
+}
+
+footer{
+	background: #1D2748;
+	width: 100%;
+	height: 38px;
+  display: flex;
+  font: 18px 'Quicksand';
+	padding-top: 15px;
+	bottom: 0;
+  justify-content: center;
+  color: white;
+  font: 15px 'Quicksand';
+
+}
+
+/* Responsive */
+@media only screen and (max-width: 375px) {
+  .pokemonConteiner{
+    width: 80%;
+  }
+
+  .cajaPersonaje{
+    width:100%;
+  }
+};
