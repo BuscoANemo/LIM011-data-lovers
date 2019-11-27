@@ -29,57 +29,25 @@ export const filtraDebilidad = (data, value) => {
 };
 
 export const ordenaAlfaAscendente = (data) => {
-  const array = data.sort((objeto1, objeto2) => {
-    if (objeto1.name > objeto2.name) {
-      return 1;
-    }
-    if (objeto1.name < objeto2.name) {
-      return -1;
-    }
-    return 0;
-  });
+  const array = data.sort((objeto1, objeto2) => ((objeto1.name > objeto2.name) ? 1 : -1));
 
   return array;
 };
 
 export const ordenaAlfaDescendente = (data) => {
-  const array = data.sort((objeto1, objeto2) => {
-    if (objeto1.name > objeto2.name) {
-      return -1;
-    }
-    if (objeto1.name < objeto2.name) {
-      return 1;
-    }
-    return 0;
-  });
+  const array = data.sort((objeto1, objeto2) => ((objeto1.name > objeto2.name) ? -1 : 1));
 
   return array;
 };
 
 export const ordenaNumAscendente = (data) => {
-  const array = data.sort((objeto1, objeto2) => {
-    if (objeto1.num > objeto2.num) {
-      return 1;
-    }
-    if (objeto1.num < objeto2.num) {
-      return -1;
-    }
-    return 0;
-  });
+  const array = data.sort((objeto1, objeto2) => ((objeto1.num > objeto2.num) ? 1 : -1));
 
   return array;
 };
 
 export const ordenaNumDescendente = (data) => {
-  const array = data.sort((objeto1, objeto2) => {
-    if (objeto1.num > objeto2.num) {
-      return -1;
-    }
-    if (objeto1.num < objeto2.num) {
-      return 1;
-    }
-    return 0;
-  });
+  const array = data.sort((objeto1, objeto2) => ((objeto1.num > objeto2.num) ? -1 : 1));
 
   return array;
 };
