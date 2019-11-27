@@ -14,16 +14,20 @@
   "dependencies": {
     "@babel/core": "^7.6.2",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
-    "babel-jest": "^24.9.0",
-    "htmlhint": "^0.11.0",
-    "jest": "^24.9.0",
     "opener": "^1.5.1",
     "serve": "^11.0.0"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.9.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "eslint": "^6.5.1",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.19.0"
+    "eslint-plugin-jest": "^22.19.0",
+    "htmlhint": "^0.11.0",
+    "jest": "^24.9.0",
+    "regenerator-runtime": "^0.13.3"
   }
 }
